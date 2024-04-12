@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WH2.Anmeldung" Shell.FlyoutBehavior="Disabled"
+             xmlns:viewmodel="clr-namespace:WH2.ViewModel"
+             x:DataType="viewmodel:EingabeViewModel">
+             
+    <ScrollView>
+
+
+
+        <VerticalStackLayout
+
+    Padding="40,0"
+    Spacing="45">
+
+
+
+            <Label
+   Text="Wilkommen bei der WarhammerApp"
+    Style="{StaticResource Headline}"
+    SemanticProperties.HeadingLevel="Level1" 
+       />
+
+
+
+            <Entry Keyboard="Text"
+            Placeholder="Enter Player Name"
+                 VerticalOptions="CenterAndExpand"
+                  
+                   Text="{Binding Eingabe_UI_User}"/>
+            <Entry Keyboard="Text"
+            Placeholder="Enter Password"
+                 VerticalOptions="CenterAndExpand"
+                   
+                   Text="{Binding Eingabe_UI_Password}"/>
+            <Button Text="Anmeldung"
+        x:Name="LoginButton"
+        BorderWidth="1"
+        HorizontalOptions="Center"
+        VerticalOptions="CenterAndExpand" Command="{Binding LoginCommand}"
+
+        
+        />
+
+        </VerticalStackLayout>
+
+
+
+
+    </ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WH2.Eingabe"
+             Title="Eingabe">
+
+    <ScrollView>
+
+        <VerticalStackLayout>
+
+
+     <Button Text="Eingabe!"
+     BorderWidth="1"
+     HorizontalOptions="Center"
+     VerticalOptions="End"
+             
+     Clicked="GeheZuAusgabe"
+        />
+
+     <Button Text="Ausgabe!"
+             
+     BorderWidth="1"
+     HorizontalOptions="Center"
+     Clicked="GeheZuEingabe"
+             VerticalOptions="End" 
+             />
+        </VerticalStackLayout>
+
+    </ScrollView>
+   
+</ContentPage>

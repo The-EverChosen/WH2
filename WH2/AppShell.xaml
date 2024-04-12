@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="WH2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:WH2"
+    
+    Title="WH2">
+
+    <ShellContent ContentTemplate="{DataTemplate local:Anmeldung}">
+        
+        
+        
+        
+    </ShellContent>
+    
+    <FlyoutItem Title="Eingabe Seite">
+        <ShellContent 
+            ContentTemplate="{DataTemplate local:Eingabe}">
+            
+        </ShellContent>
+                
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Ausgabe">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:Ausgabe}"
+        ></ShellContent>
+    </FlyoutItem>
+    
+
+</Shell>
