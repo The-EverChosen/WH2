@@ -10,6 +10,7 @@ public class SQL
     public string dataBaseName { get; protected set; } 
     public SqlConnection connection { get; protected set; }
     public string connectionString { get; protected set; }
+  
     
     /// <summary>
     /// Kontruktor die meine Eigenschaften festlegt
@@ -22,15 +23,20 @@ public class SQL
         this.dataBaseName = @"Warhammer";
         this.connectionString = SetConnectionString(playername, password);
         this.connection = new SqlConnection(connectionString);    //Inhalt des Kunstrokotr
-
-
     }
+
+    public string name(string name)
+    {
+        return name;
+    } 
+    
     //Methode zum bauen der Datenbankverbindung mit Playername und password
     public string SetConnectionString(string playername, string password)
     {
         SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
         try
         {
+
             builder.DataSource = dataSource;
             builder.InitialCatalog = dataBaseName;
             builder.UserID = playername;                // bekommen wir von der eingabe von Seite Anmeldung

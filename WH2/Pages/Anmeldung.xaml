@@ -22,7 +22,9 @@
     SemanticProperties.HeadingLevel="Level1" 
        />
 
+            <Button Text="Blabla" HorizontalOptions="CenterAndExpand">
 
+            </Button>
 
             <Entry Keyboard="Text"
             Placeholder="Enter Player Name"
