@@ -7,25 +7,20 @@
     <ScrollView>
 
         <VerticalStackLayout>
- 
 
-     <Button Text="Eingabe!"
+            <Button Text="Eingabe!"
      BorderWidth="1"
      HorizontalOptions="Center"
      VerticalOptions="End"
-             
-     Clicked="GeheZuAusgabe"
-        />
 
-     <Button Text="Ausgabe!"
-             
+     Clicked="GeheZuAusgabe" />
+
+            <Button Text="Ausgabe!"
+
      BorderWidth="1"
      HorizontalOptions="Center"
      Clicked="GeheZuEingabe"
-             VerticalOptions="End" 
-             />
+             VerticalOptions="End" />
         </VerticalStackLayout>
-
     </ScrollView>
-   
 </ContentPage>

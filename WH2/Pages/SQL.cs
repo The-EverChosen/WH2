@@ -5,24 +5,21 @@ using WH2.ViewModel;
 namespace WH2;
 
 public class SQL
-{   // Adresse der Datenbank gespeichert in strings
+{
+    public string blabla = "";
     public string dataSource { get;  protected set; } 
     public string dataBaseName { get; protected set; } 
     public SqlConnection connection { get; protected set; }
     public string connectionString { get; protected set; }
   
     
-    /// <summary>
-    /// Kontruktor die meine Eigenschaften festlegt
-    /// </summary>
-    /// <param name="playername">Name des Spielers</param>
-    /// <param name="password">Password des Spielers</param>
-    public SQL(string playername,string password)  // Er bekommt Name und passwort und kontruiert daraus einen anmeldestring dings bums                         
+
+    public SQL(string playername,string password)                           
 	{
         this.dataSource = @"localhost\SQLEXPRESS";
         this.dataBaseName = @"Warhammer";
         this.connectionString = SetConnectionString(playername, password);
-        this.connection = new SqlConnection(connectionString);    //Inhalt des Kunstrokotr
+        this.connection = new SqlConnection(connectionString);    
     }
 
     public string name(string name)
