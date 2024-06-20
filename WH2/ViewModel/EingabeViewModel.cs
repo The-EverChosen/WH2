@@ -37,7 +37,7 @@ namespace WH2.ViewModel
         }
         public static string RückGabeBeiFalscherAnmeldung()
         {
-            string RGW = "Melde dich richtig an du Wurst.";
+            string RGW = "Die Eingabe ist nicht korrekt.";
             return RGW;
         }
 
